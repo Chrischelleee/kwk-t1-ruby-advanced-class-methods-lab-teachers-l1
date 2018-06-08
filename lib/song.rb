@@ -1,21 +1,21 @@
 class Song
   attr_accessor :name, :artist_name
-  @@all = []
+  @@song = []
 
-  def self.all
-    @@all
+  def self.song
+    @@song
   end
 
   def save
-    self.class.all << self
+    self.class.song << self
   end
 
   def initialize(name)
     @name = name
-    @@all << self
+    @@song << self
   end
   
   def self.find_by_name(name)
-    @@all.detect{|person| person.name == name}
+    @@song.detect{|person| person.name == name}
   end
 end
