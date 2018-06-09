@@ -20,7 +20,7 @@ class Song
   #   @name = name
   #   @@song << self
   # end
-  # 
+  #
   # def self.find_by_name(name)
   #   @@song.detect{|person| person.name == name}
   # end
