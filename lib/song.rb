@@ -10,8 +10,8 @@ class Song
     self.class.song << self
   end
 
-  def create
-    self.class.song << self
+  def self.create
+    @@song << self.new
   end
 
   def initialize(name)
